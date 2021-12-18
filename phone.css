@@ -1,0 +1,364 @@
+/* CSS reset */
+*{
+   margin: 0;
+   padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+ /*variables*/
+
+:root{
+    --navbar-height: 60px;
+}
+
+/*Navigation bar*/
+
+#navbar{
+    position: sticky;
+    top: 0px;
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation bar :Logo and Image */
+#logo {
+    margin: 10px 34px;
+}
+
+#logo img{
+     height: 50px;
+     margin: 15px 15px;
+}
+
+
+/*Navigation bar :List styling*/
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhaijaan', cursive;
+
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    top: 0px;
+    left: 0px;
+
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/*Home section*/
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+
+}
+
+#home::before {
+    content: "";
+    background: url("https://www.teahub.io/photos/full/309-3091004_medical-wallpaper-hd-medical.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+    top: 0px;
+    left: 0px;
+}
+
+#home h1{
+    color: black;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Calibri", sans-serif;
+
+}
+
+/*Services section*/
+
+#Services{
+    margin: 15px;
+    display: flex;
+    border: 3px solid #ff144b;
+    flex-direction: row;
+
+}
+
+#Services.box{
+    border: 2px solid brown;
+    text-align: center;
+    padding: 55px;
+    margin: 10px 15px 18px 20px;
+    top: 50px;
+    border-radius: 30px;
+    background: #F2F2F2;
+    margin-bottom: 30px;
+
+}
+#Services .box img{
+   width: 80%;
+   height: 350px;
+   margin: 40px;
+   display: inline-block;
+   padding: 5px;
+}
+#Services .box p{
+    font-family: 'Bree Serif', serif;
+
+}
+
+/*Client section*/
+#client-section{
+    position: relative;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 145px;
+}
+#clients img{
+    height: 140px;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUCwqSCUtUGckNPlZzxWDnRklIwp_e5kBnGw&usqp=CAU");
+    width: 100%;
+    height: 80%;
+    z-index: -1;
+    opacity: .8;
+}
+
+/*Contact-Section*/
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWeJByLK9oHNgDq35KoPa_5o4AuKLEeZUwFw&usqp=CAU") no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .7;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+#contact-box form{
+    font-size: 50%;
+}
+
+#contact-box label{
+    font-size: 1.5rem;
+    font-family: 'Oooh Baby', cursive;
+}
+
+#contact-box input
+#contact-box textarea{
+    width: 100%;
+    padding: 5rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+
+
+footer{
+   background: black;
+    color: white;
+    padding: 10px 40px;
+}
+
+
+/* Utility Class*/
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: fantasy;
+}
+.h-secondary{
+    font-family: "-apple-system", HelveticaNeue, Roboto, Arial, sans-serif ;
+    font-size: 2.5rem;
+    padding: 15px;
+}
+.btn{
+    padding: 10px 25px;
+    border: 5px solid white;
+    background-color: #a52a2a;
+    border-radius: 10px;
+    color: white;
+    margin: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
